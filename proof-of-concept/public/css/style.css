@@ -1,0 +1,94 @@
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .user-details p {
+            margin: 1em;
+            font-size: 14px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .user-details input {
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .user-details input[type='text'],
+        .user-details input[type='password'] {
+            max-width: 400px;
+            width: 100%;
+            border: 1px solid grey;
+            font-family: 'Montserrat', sans-serif;
+            padding: 1em;
+            margin-top: 1em;
+        }
+        
+        .user-details input[type=submit] {
+            max-width: 500px;
+            width: 100%;
+            padding: 1em 0;
+            background-color: rgb(100, 140, 255);
+            color: white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-radius: 0 0 1em 1em;
+            transition-duration: 0.1s;
+        }
+        
+        .user-details input[type=submit]:hover {
+            background-color: rgb(95, 135, 250);
+            font-size: 14px;
+        }
+        
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .error {
+            background-color: rgb(255, 100, 100);
+            color: #fff;
+            font-weight: 600;
+            position: fixed;
+            padding: 1em;
+            border-radius: 2em;
+            animation: fadeOut 5s;
+            animation-fill-mode: forwards;
+            margin: 0;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 1000%);
+        }
+        
+        @keyframes fadeOut {
+            0% {
+                transform: translate(-55%, 1000%);
+            }
+            1% {
+                transform: translate(-45%, 1000%);
+            }
+            2% {
+                transform: translate(-55%, 1000%);
+            }
+            3% {
+                transform: translate(-45%, 1000%);
+            }
+            4% {
+                transform: translate(-50%, 1000%);
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
