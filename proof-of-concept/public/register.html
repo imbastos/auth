@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ptBR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autenticação</title>
+</head>
+
+<body>
+
+    <div class="app center">
+
+        <h1 class="title">Registro</h1>
+        <hr>
+
+        <form action="/register" method="post">
+
+            <div class="user-details">
+
+                <input type="text" name="username" id="username_input" placeholder="Nome de Usuário *" required autocomplete=off>
+                <input type="text" name="displayname" id="displayname_input" placeholder="Nome de Exibição *" required autocomplete=off>
+                <input type="password" name="password" id="password_input" placeholder="Senha *" required autocomplete=off>
+
+                <p>Já tem uma conta? <a href="login">Conecte-se</a></p>
+
+                <input type="submit" value="Criar">
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <style>
+
+        hr {
+            margin: 1em 0;
+        }
+        
+        h1 {
+            margin-top: .2em;
+        }
+        
+        .app {
+            background-color: white;
+            position: fixed;
+            display: block;
+            max-width: 500px;
+            width: 100%;
+            max-height: 345px;
+            height: 100%;
+            text-align: center;
+            border-radius: 1em;
+        }
+       
+    </style>
+
+</body>
+
+</html>
